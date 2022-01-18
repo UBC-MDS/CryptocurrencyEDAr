@@ -8,7 +8,7 @@ PLEASE ADD DESCRIPTION HERE
 
 ```bash
 # install.packages("Cryptocurrencyedar")
-devtools::install_github("alexYinanGu0/Cryptocurrencyedar")
+devtools::install_github("UBC-MDS/Cryptocurrencyedar")
 ```
 
 ## Usage
