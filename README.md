@@ -6,9 +6,12 @@ PLEASE ADD DESCRIPTION HERE
 
 ## Installation
 
-```bash
-# install.packages("Cryptocurrencyedar")
-devtools::install_github("UBC-MDS/Cryptocurrencyedar")
+You can install the development version of regexcite from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("UBC-MDS/CryptocurrencyEDAr")
 ```
 
 ## Usage
