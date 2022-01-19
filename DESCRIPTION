@@ -3,13 +3,21 @@ Title: Analyze Historical Cryptocurrency Prices and Performance
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Berkay",
-           family = "Bulut")
+           family = "Bulut", 
+           "jane@example.com", 
+           role = c("aut", "cre"))
     person(given = "Cici",
-           family = "Du")
+           family = "Du", 
+           "cicidhz@gmail.com", 
+           role = c("aut", "cre"))
     person(given = "Yinan",
-           family = "Guo")
+           family = "Guo", 
+           "alex.yinan.guo@gmail.com", 
+           role = c("aut", "cre"))
     person(given = "Nobby",
-           family = "Nguyen")
+           family = "Nguyen",
+           "thungoct283@gmail.com", 
+           role = c("aut", "cre"))
 Description: This is a Python package to analyze historical cryptocurrency prices and performance through simple exploratory data analysis including calculations and plotting. Data is sourced from Yahoo Finance. There are four functions that are included in this python package which are described in more detail below. Cryptocurrency investors and enthusiasts can use this package to analyze cryptocurrencies of interest.
 License: MIT + file LICENSE
 Encoding: UTF-8
