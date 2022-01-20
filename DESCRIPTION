@@ -18,7 +18,11 @@ Authors@R:
            family = "Nguyen",,
            "thungoct283@gmail.com", 
            role = c("aut", "cre"))
-Description: This is a Python package to analyze historical cryptocurrency prices and performance through simple exploratory data analysis including calculations and plotting. Data is sourced from Yahoo Finance. There are four functions that are included in this python package which are described in more detail below. Cryptocurrency investors and enthusiasts can use this package to analyze cryptocurrencies of interest.
+Description: This is an R package to analyze historical cryptocurrency prices
+and performance through simple exploratory data analysis including calculations 
+and plotting. Data is sourced from the KuCoin API. 
+Cryptocurrency investors and enthusiasts can use this package to analyze 
+cryptocurrencies of interest.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
