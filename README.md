@@ -1,6 +1,6 @@
 # CryptocurrencyEDAr
 
-This is a Python package to analyze historical cryptocurrency prices and performance through simple exploratory data analysis including calculations and plotting. Data is sourced from the KuCoin API. There are four functions that are included in this python package which are described in more detail below. Cryptocurrency investors and enthusiasts can use this package to analyze cryptocurrencies of interest.
+This is a R package to analyze historical cryptocurrency prices and performance through simple exploratory data analysis including calculations and plotting. Data is sourced from the KuCoin API. There are four functions that are included in this R package which are described in more detail below. Cryptocurrency investors and enthusiasts can use this package to analyze cryptocurrencies of interest.
 
 There are existing R packages that support users to access information of cryptocurrency such as `crypto`, `crypto2` and `coinmarketcapr`. Among these 3 packages, only `coinmarketcapr` provides visualization of top currency. Indeed , there is no integrated R package for retrieving, analyzing, and visualizing cryptocurrency data altogether. Therefore, we want to build a simple tool that can facilitate simple cryptocurrency data analysis all at once.
 
