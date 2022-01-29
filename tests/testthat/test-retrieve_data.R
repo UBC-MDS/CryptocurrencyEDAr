@@ -6,8 +6,8 @@ library(stringr)
 library(anytime)
 
 helper_df <- data.frame(Symbol = c("BTC-USDT", "BTC-USDT", "BTC-USDT"),
-Date = c(2021-12-25, 2021-12-26, 2021-12-27),
-Close = c(50771.5, 50715.7, 47543.8)
+                        Date = c(2021-12-25, 2021-12-26, 2021-12-27),
+                        Close = c(50771.5, 50715.7, 47543.8)
 )
 
 dataframe_test <- retrieve_data(symbol="BTC-USDT",
