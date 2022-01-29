@@ -12,6 +12,6 @@ test_that("avg_daily_return raises error for the wrong input type", {
 })
 
 test_that("the output of avg_daily_return is in correct type", {
-  expect_is(avg_daily_return(df$Price), 'numeric')
+  expect_type(avg_daily_return(df$Price), 'double')
 })
 
