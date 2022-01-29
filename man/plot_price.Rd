@@ -4,7 +4,7 @@
 \alias{plot_price}
 \title{Plot the price of cryptocurrency}
 \usage{
-plot_price(price_df, name, window)
+plot_price(df = price_df)
 }
 \arguments{
 \item{price_df}{data frame with time and price data.}
@@ -20,5 +20,6 @@ ggplot object
 Plot the price of cryptocurrency
 }
 \examples{
-plot_price(price_df, "BTCBitcoin", ["2021-01-01", "2021-12-31"])
+price_df <- retrieve_data("BTC-USDT", "1day", "2021-01-01", "2021-12-31")
+plot_price(price_df)
 }
