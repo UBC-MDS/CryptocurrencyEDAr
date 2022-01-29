@@ -1,9 +1,3 @@
-# library(testthat)
-# library(rlang)
-# library(httr)
-# library(jsonlite)
-# library(stringr)
-# library(anytime)
 
 helper_df <- data.frame(Symbol = c("BTC-USDT", "BTC-USDT", "BTC-USDT"),
                         Date = c(2021-12-25, 2021-12-26, 2021-12-27),

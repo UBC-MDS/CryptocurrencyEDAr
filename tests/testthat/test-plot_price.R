@@ -1,6 +1,3 @@
-# library(testthat)
-# library(rlang)
-# library(ggplot2)
 #' @importFrom rlang get_expr
 test_that('Plot should use geom_line and map Date to x-axis, Close to y-axis and
 title is not empty.', {
