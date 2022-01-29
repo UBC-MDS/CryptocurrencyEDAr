@@ -14,7 +14,7 @@ library(anytime)
 #' @export
 #'
 #' @examples
-#' retrieve_data("BTC-USDT", "1day", "2021-01-01", "2021-12-31")
+#' \dontrun{retrieve_data("BTC-USDT", "1day", "2021-01-01", "2021-12-31")}
 retrieve_data <- function(symbol="BTC-USDT", time_period="1day",
                           start_date="2021-01-01", end_date="2021-01-09"){
 

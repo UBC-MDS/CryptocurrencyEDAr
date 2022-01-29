@@ -18,5 +18,6 @@ A dataframe with a new column of daily growth rate.
 Calculate daily growth rate of a cryptocurrency
 }
 \examples{
-daily_growth_rate(price_df, "closing price")
+price_df = data.frame('Date'=c('2022-01-15', '2022-01-16'), 'Close'=c(1.5, 2.5))
+daily_growth_rate(price_df, "Close")
 }
