@@ -12,6 +12,7 @@
 #' {plot_price(df = price_df)}
 
 plot_price <- function(df = price_df){
+    Close <- Date <- price_df <- NULL
 
     #check input
     if(!is.data.frame(df)) {
