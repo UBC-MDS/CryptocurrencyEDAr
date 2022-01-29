@@ -27,5 +27,5 @@ dataframe with time and price data.
 Retrieve the historical price of cryptocurrency
 }
 \examples{
-retrieve_data("BTC-USDT", "1day", "2021-01-01", "2021-12-31")
+\dontrun{retrieve_data("BTC-USDT", "1day", "2021-01-01", "2021-12-31")}
 }

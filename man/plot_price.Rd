@@ -19,7 +19,3 @@ ggplot object
 \description{
 Plot the price of cryptocurrency
 }
-\examples{
-price_df <- retrieve_data("BTC-USDT", "1day", "2021-01-01", "2021-12-31")
-plot_price(price_df)
-}
