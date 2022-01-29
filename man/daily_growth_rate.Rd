@@ -18,5 +18,5 @@ A dataframe with a new column of daily growth rate.
 Calculate daily growth rate of a cryptocurrency
 }
 \examples{
-daily_growth_rate(price_df, closing_price)
+daily_growth_rate(price_df, "closing price")
 }

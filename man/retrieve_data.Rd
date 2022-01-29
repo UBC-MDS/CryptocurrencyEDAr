@@ -4,7 +4,12 @@
 \alias{retrieve_data}
 \title{Retrieve the historical price of cryptocurrency}
 \usage{
-retrieve_data(symbol, time_period, start_date, end_date)
+retrieve_data(
+  symbol = "BTC-USDT",
+  time_period = "1day",
+  start_date = "2021-01-01",
+  end_date = "2021-01-09"
+)
 }
 \arguments{
 \item{symbol}{string of symbol for cryptocurrency}
