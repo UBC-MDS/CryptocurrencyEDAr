@@ -8,14 +8,14 @@ plot_price(df = price_df)
 }
 \arguments{
 \item{price_df}{data frame with time and price data.}
-
-\item{name}{character name of the cryptocurrency of interest}
-
-\item{window}{vector of two dates in character}
 }
 \value{
 ggplot object
 }
 \description{
 Plot the price of cryptocurrency
+}
+\examples{
+price_df <- data.frame('Symbol'=c('BTC-USDT','BTC-USDT'), 'Date'=c('2022-01-15', '2022-01-16'), 'Close'=c(1.5, 2.5))
+\dontrun{plot_price(df = price_df)}
 }
