@@ -37,4 +37,5 @@ Imports:
     Hmisc,
     jsonlite,
     stringr,
-    anytime
+    anytime,
+    rlang
