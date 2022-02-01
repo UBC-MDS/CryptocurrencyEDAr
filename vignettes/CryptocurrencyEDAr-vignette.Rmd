@@ -1,0 +1,64 @@
+---
+title: "Introduction to CryptocurrencyEDAr"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{CryptocurrencyEDAr-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(CryptocurrencyEDAr)
+```
+
+## Brief Introduction
+CryptocurrencyEDAr is used for simple exploratory data analysis of historical cryptocurrency prices and performance.There are four functions that are included in this R package which are described in more detail below.
+Cryptocurrency investors and enthusiasts can use this package to analyze cryptocurrencies of interest.
+
+## Data
+Data is sourced from the KuCoin API.  
+
+## Function Demonstration
+
+### Retrieve Data and Store it as a dataframe
+This function downloads historical data using an an http request from a cryptocurrency exchange. It returns a data frame with cryptocurrency symbol, time frame, and closing price.
+```{r}
+price_df <- retrieve_data("BTC-USDT", "1day", "2021-01-01", "2021-12-31")
+```
+
+### Data overview
+We can take a look at the head of the data frame.
+```{r}
+head(price_df)
+```
+
+### Plot the price data
+We can plot the price data using the data frame we just retrieved.
+```{r fig.width=7, fig.height=4}
+plot_price(df = price_df)
+```
+
+ 
+
+### Calculate daily growth rate
+This function performs calculation of daily growth rate of the price of the cryptocurrency inputted over a period of time.
+We store the result as a variable for the purpose of viewing the data.
+```{r}
+new_price_df <- daily_growth_rate(price_df, "Close")
+head(new_price_df)
+```
+
+### Calculate average daily return
+```{r}
+avg_daily_return(price_df$Close)
+```
+
+
+
