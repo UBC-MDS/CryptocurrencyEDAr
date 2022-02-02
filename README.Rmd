@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# regexcite
+# CryptocurrencyEDAr
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -27,28 +27,44 @@ There are existing R packages that support users to access information of crypto
 
 The package contains the following four functions:
 
-- `retrieve_data`: downloads historical data from a cryptocurrency exchange using an an http request from a cryptocurrency exchange.
+- `retrieve_data`: downloads historical data using an an http request from a cryptocurrency exchange.
 
 - `plot_price`: generates and visualizes a plot of the price of the cryptocurrenty inputted over a period of time.
 
-- `daily_growth_rate`: performs calculation of daily growth rate of the price of the cryptocurrenty inputted over a period of time.
+- `daily_growth_rate`: performs calculation of daily growth rate of the price of the cryptocurrency inputted over a period of time.
 
 - `avg_daily_return`: performs calculation of the average daily return of the inputted cryptocurrency price.
 
 
 ## Installation
 
-You can install the development version of regexcite from
+You can install the development version of `CryptocurrencyEDAr` from
 [GitHub](https://github.com/) with:
 
-``` r
+``` {r, results = "hide"}
 # install.packages("devtools")
 devtools::install_github("UBC-MDS/CryptocurrencyEDAr")
 ```
 
 ## Usage
+After installation, firstly load the functions from the package:
+```{r}
+devtools::load_all()
+```
 
-TO DO
+Now the functions are ready to use as follows:
+```{r fig.width=6, fig.height=4}
+price_df <- retrieve_data("BTC-USDT", "1day", "2021-01-01", "2021-12-31")
+plot_price(df = price_df)
+new_price_df <- daily_growth_rate(price_df, "Close")
+head(new_price_df)
+avg_daily_return(price_df$Close)
+```
+
+## Documentation
+
+- Vignette homepage
+- Introduction to CryptocurrencyEDAr package
 
 ## Contributors
 
