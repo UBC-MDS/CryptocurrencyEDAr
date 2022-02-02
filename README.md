@@ -25,31 +25,67 @@ data analysis all at once.
 
 The package contains the following four functions:
 
--   `retrieve_data`: downloads historical data from a cryptocurrency
-    exchange using an an http request from a cryptocurrency exchange.
+-   `retrieve_data`: downloads historical data using an an http request
+    from a cryptocurrency exchange.
 
 -   `plot_price`: generates and visualizes a plot of the price of the
     cryptocurrenty inputted over a period of time.
 
 -   `daily_growth_rate`: performs calculation of daily growth rate of
-    the price of the cryptocurrenty inputted over a period of time.
+    the price of the cryptocurrency inputted over a period of time.
 
 -   `avg_daily_return`: performs calculation of the average daily return
     of the inputted cryptocurrency price.
 
 ## Installation
 
-You can install the development version of regexcite from
+You can install the development version of `CryptocurrencyEDAr` from
 [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("UBC-MDS/CryptocurrencyEDAr")
+#> Downloading GitHub repo UBC-MDS/CryptocurrencyEDAr@HEAD
+#> Installing package into '/private/var/folders/ch/m6rtzpn528x_zv0kptpc9n_40000gn/T/Rtmp3oyTop/temp_libpathc743358dc1f6'
+#> (as 'lib' is unspecified)
 ```
 
 ## Usage
 
-TO DO
+After installation, firstly load the functions from the package:
+
+``` r
+devtools::load_all()
+#> ℹ Loading CryptocurrencyEDAr
+```
+
+Now the functions are ready to use as follows:
+
+``` r
+price_df <- retrieve_data("BTC-USDT", "1day", "2021-01-01", "2021-12-31")
+plot_price(df = price_df)
+```
+
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+
+``` r
+new_price_df <- daily_growth_rate(price_df, "Close")
+head(new_price_df)
+#>     Symbol       Date   Close daily_growth_rate
+#> 1 BTC-USDT 2021-12-30 46216.4                NA
+#> 2 BTC-USDT 2021-12-29 47122.4         1.9603431
+#> 3 BTC-USDT 2021-12-28 46466.4        -1.3921192
+#> 4 BTC-USDT 2021-12-27 47543.8         2.3186647
+#> 5 BTC-USDT 2021-12-26 50715.7         6.6715324
+#> 6 BTC-USDT 2021-12-25 50771.5         0.1100251
+avg_daily_return(price_df$Close)
+#> [1] -38.65289
+```
+
+## Documentation
+
+-   Vignette homepage
+-   Introduction to CryptocurrencyEDAr package
 
 ## Contributors
 
