@@ -1,6 +1,6 @@
 # MIT License
 
-Copyright (c) 2022 CryptocurrencyEDAr authors
+Copyright (c) 2022 Berkay Bulut, Cici Du, Alex Yinan Guo, Nobby Nguyen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
