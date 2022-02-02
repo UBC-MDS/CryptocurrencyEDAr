@@ -83,24 +83,55 @@
 </h2>
 <p>The package contains the following four functions:</p>
 <ul>
-<li><p><code>retrieve_data</code>: downloads historical data from a cryptocurrency exchange using an an http request from a cryptocurrency exchange.</p></li>
+<li><p><code>retrieve_data</code>: downloads historical data using an an http request from a cryptocurrency exchange.</p></li>
 <li><p><code>plot_price</code>: generates and visualizes a plot of the price of the cryptocurrenty inputted over a period of time.</p></li>
-<li><p><code>daily_growth_rate</code>: performs calculation of daily growth rate of the price of the cryptocurrenty inputted over a period of time.</p></li>
+<li><p><code>daily_growth_rate</code>: performs calculation of daily growth rate of the price of the cryptocurrency inputted over a period of time.</p></li>
 <li><p><code>avg_daily_return</code>: performs calculation of the average daily return of the inputted cryptocurrency price.</p></li>
 </ul>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the development version of regexcite from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<p>You can install the development version of <code>CryptocurrencyEDAr</code> from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># install.packages("devtools")</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"UBC-MDS/CryptocurrencyEDAr"</span><span class="op">)</span></code></pre></div>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"UBC-MDS/CryptocurrencyEDAr"</span><span class="op">)</span>
+<span class="co">#&gt; Downloading GitHub repo UBC-MDS/CryptocurrencyEDAr@HEAD</span>
+<span class="co">#&gt; Installing package into '/private/var/folders/ch/m6rtzpn528x_zv0kptpc9n_40000gn/T/Rtmp3oyTop/temp_libpathc743358dc1f6'</span>
+<span class="co">#&gt; (as 'lib' is unspecified)</span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
 </h2>
-<p>TO DO</p>
+<p>After installation, firstly load the functions from the package:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu">load_all</span><span class="op">(</span><span class="op">)</span>
+<span class="co">#&gt; ℹ Loading CryptocurrencyEDAr</span></code></pre></div>
+<p>Now the functions are ready to use as follows:</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">price_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/retrieve_data.html">retrieve_data</a></span><span class="op">(</span><span class="st">"BTC-USDT"</span>, <span class="st">"1day"</span>, <span class="st">"2021-01-01"</span>, <span class="st">"2021-12-31"</span><span class="op">)</span>
+<span class="fu"><a href="reference/plot_price.html">plot_price</a></span><span class="op">(</span>df <span class="op">=</span> <span class="va">price_df</span><span class="op">)</span></code></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-4-1.png" width="100%"></p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">new_price_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/daily_growth_rate.html">daily_growth_rate</a></span><span class="op">(</span><span class="va">price_df</span>, <span class="st">"Close"</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">new_price_df</span><span class="op">)</span>
+<span class="co">#&gt;     Symbol       Date   Close daily_growth_rate</span>
+<span class="co">#&gt; 1 BTC-USDT 2021-12-30 46216.4                NA</span>
+<span class="co">#&gt; 2 BTC-USDT 2021-12-29 47122.4         1.9603431</span>
+<span class="co">#&gt; 3 BTC-USDT 2021-12-28 46466.4        -1.3921192</span>
+<span class="co">#&gt; 4 BTC-USDT 2021-12-27 47543.8         2.3186647</span>
+<span class="co">#&gt; 5 BTC-USDT 2021-12-26 50715.7         6.6715324</span>
+<span class="co">#&gt; 6 BTC-USDT 2021-12-25 50771.5         0.1100251</span>
+<span class="fu"><a href="reference/avg_daily_return.html">avg_daily_return</a></span><span class="op">(</span><span class="va">price_df</span><span class="op">$</span><span class="va">Close</span><span class="op">)</span>
+<span class="co">#&gt; [1] -38.65289</span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
+</h2>
+<ul>
+<li>Vignette homepage</li>
+<li>Introduction to CryptocurrencyEDAr package</li>
+</ul>
 </div>
 <div class="section level2">
 <h2 id="contributors">Contributors<a class="anchor" aria-label="anchor" href="#contributors"></a>
