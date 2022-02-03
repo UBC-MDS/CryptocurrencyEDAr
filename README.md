@@ -85,8 +85,9 @@ avg_daily_return(price_df$Close)
 
 ## Documentation
 
--   Vignette homepage
--   Introduction to CryptocurrencyEDAr package
+-   [Vignette homepage](https://ubc-mds.github.io/CryptocurrencyEDAr/)
+-   [Introduction to CryptocurrencyEDAr
+    package](https://ubc-mds.github.io/CryptocurrencyEDAr/articles/CryptocurrencyEDAr-vignette.html)
 
 ## Contributors
 
