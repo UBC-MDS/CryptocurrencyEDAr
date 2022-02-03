@@ -26,7 +26,8 @@ Cryptocurrency investors and enthusiasts can use this package to analyze cryptoc
 Data is sourced from the KuCoin API.  
 
 ## Function Demonstration
-```{r}
+```{r,results = "hide"}
+#install.packages("devtools")
 devtools::load_all()
 ```
 
