@@ -95,79 +95,7 @@
 <p>You can install the development version of <code>CryptocurrencyEDAr</code> from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># install.packages("devtools")</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"UBC-MDS/CryptocurrencyEDAr"</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
-<span class="co">#&gt; Downloading GitHub repo UBC-MDS/CryptocurrencyEDAr@HEAD</span>
-<span class="co">#&gt; Installing 23 packages: rlang, digest, crayon, cli, pillar, magrittr, fansi, lifecycle, withr, tibble, glue, stringi, xfun, yaml, jsonlite, backports, knitr, Rcpp, viridis, htmlTable, data.table, openssl, mime</span>
-<span class="co">#&gt; Installing packages into 'C:/Users/alexx/R/win-library/4.1'</span>
-<span class="co">#&gt; (as 'lib' is unspecified)</span>
-<span class="co">#&gt; Warning: cannot remove prior installation of package 'rlang'</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\00LOCK\rlang\libs\x64\rlang.dll to C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\rlang\libs\x64\rlang.dll: Permission denied</span>
-<span class="co">#&gt; Warning: restored 'rlang'</span>
-<span class="co">#&gt; Warning: cannot remove prior installation of package 'digest'</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\00LOCK\digest\libs\x64\digest.dll to C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\digest\libs\x64\digest.dll: Permission denied</span>
-<span class="co">#&gt; Warning: restored 'digest'</span>
-<span class="co">#&gt; Warning: cannot remove prior installation of package 'cli'</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying</span>
-<span class="co">#&gt; C:\Users\alexx\R\win-library\4.1\00LOCK\cli\libs\x64\cli.dll to C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\cli\libs\x64\cli.dll: Permission denied</span>
-<span class="co">#&gt; Warning: restored 'cli'</span>
-<span class="co">#&gt; Warning: cannot remove prior installation of package 'magrittr'</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\00LOCK\magrittr\libs\x64\magrittr.dll to C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\magrittr\libs\x64\magrittr.dll: Permission denied</span>
-<span class="co">#&gt; Warning: restored 'magrittr'</span>
-<span class="co">#&gt; Warning: cannot remove prior installation of package 'fansi'</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\00LOCK\fansi\libs\x64\fansi.dll to C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\fansi\libs\x64\fansi.dll: Permission denied</span>
-<span class="co">#&gt; Warning: restored 'fansi'</span>
-<span class="co">#&gt; Warning: cannot remove prior installation of package 'tibble'</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\00LOCK\tibble\libs\x64\tibble.dll to C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\tibble\libs\x64\tibble.dll: Permission denied</span>
-<span class="co">#&gt; Warning: restored 'tibble'</span>
-<span class="co">#&gt; Warning: cannot remove prior installation of package 'glue'</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying</span>
-<span class="co">#&gt; C:\Users\alexx\R\win-library\4.1\00LOCK\glue\libs\x64\glue.dll to C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\glue\libs\x64\glue.dll: Permission denied</span>
-<span class="co">#&gt; Warning: restored 'glue'</span>
-<span class="co">#&gt; Warning: cannot remove prior installation of package 'stringi'</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\00LOCK\stringi\libs\icudt69l.dat to C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\stringi\libs\icudt69l.dat: Invalid argument</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\00LOCK\stringi\libs\x64\stringi.dll to C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\stringi\libs\x64\stringi.dll: Permission denied</span>
-<span class="co">#&gt; Warning: restored 'stringi'</span>
-<span class="co">#&gt; Warning: cannot remove prior installation of package 'xfun'</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying</span>
-<span class="co">#&gt; C:\Users\alexx\R\win-library\4.1\00LOCK\xfun\libs\x64\xfun.dll to C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\xfun\libs\x64\xfun.dll: Permission denied</span>
-<span class="co">#&gt; Warning: restored 'xfun'</span>
-<span class="co">#&gt; Warning: cannot remove prior installation of package 'yaml'</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying</span>
-<span class="co">#&gt; C:\Users\alexx\R\win-library\4.1\00LOCK\yaml\libs\x64\yaml.dll to C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\yaml\libs\x64\yaml.dll: Permission denied</span>
-<span class="co">#&gt; Warning: restored 'yaml'</span>
-<span class="co">#&gt; Warning: cannot remove prior installation of package 'jsonlite'</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\00LOCK\jsonlite\libs\x64\jsonlite.dll to C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\jsonlite\libs\x64\jsonlite.dll: Permission denied</span>
-<span class="co">#&gt; Warning: restored 'jsonlite'</span>
-<span class="co">#&gt; Warning: cannot remove prior installation of package 'openssl'</span>
-<span class="co">#&gt; Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\00LOCK\openssl\libs\x64\openssl.dll to C:</span>
-<span class="co">#&gt; \Users\alexx\R\win-library\4.1\openssl\libs\x64\openssl.dll: Permission denied</span>
-<span class="co">#&gt; Warning: restored 'openssl'</span>
-<span class="co">#&gt; Installing package into 'C:/Users/alexx/R/win-library/4.1'</span>
-<span class="co">#&gt; (as 'lib' is unspecified)</span>
-<span class="co">#&gt; Warning in i.p(...): installation of package 'C:/Users/alexx/AppData/Local/Temp/</span>
-<span class="co">#&gt; RtmpeG6i6G/file634c2e3350c/CryptocurrencyEDAr_0.0.0.9000.tar.gz' had non-zero</span>
-<span class="co">#&gt; exit status</span></code></pre></div>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"UBC-MDS/CryptocurrencyEDAr"</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
@@ -175,7 +103,7 @@
 <p>After installation, firstly load the functions from the package:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu">load_all</span><span class="op">(</span><span class="op">)</span>
-<span class="co">#&gt; i Loading CryptocurrencyEDAr</span></code></pre></div>
+<span class="co">#&gt; ℹ Loading CryptocurrencyEDAr</span></code></pre></div>
 <p>Now the functions are ready to use as follows:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">price_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/retrieve_data.html">retrieve_data</a></span><span class="op">(</span><span class="st">"BTC-USDT"</span>, <span class="st">"1day"</span>, <span class="st">"2021-01-01"</span>, <span class="st">"2021-12-31"</span><span class="op">)</span>
@@ -216,7 +144,7 @@
 <div class="section level2">
 <h2 id="license">License<a class="anchor" aria-label="anchor" href="#license"></a>
 </h2>
-<p><code>CryptocurrencyEDAr</code> was created by MDS Students from Group-11 for course 524. It is licensed under the terms of the MIT license.</p>
+<p><code>CryptocurrencyEDAr</code> was created by MDS Students from Group-11 for course DSCI-524. It is licensed under the terms of the MIT license.</p>
 </div>
 <div class="section level2">
 <h2 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
@@ -262,6 +190,8 @@
 <ul class="list-unstyled">
 <li><a href="https://github.com/UBC-MDS/CryptocurrencyEDAr/actions" class="external-link"><img src="https://github.com/UBC-MDS/CryptocurrencyEDAr/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://codecov.io/gh/UBC-MDS/CryptocurrencyEDAr?branch=main" class="external-link"><img src="https://codecov.io/gh/UBC-MDS/CryptocurrencyEDAr/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="https://github.com/UBC-MDS/CryptocurrencyEDAr/actions" class="external-link"><img src="https://github.com/UBC-MDS/CryptocurrencyEDAr/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
+<li><a href="https://app.codecov.io/gh/UBC-MDS/CryptocurrencyEDA" class="external-link"><img src="https://github.com/UBC-MDS/CryptocurrencyEDAr/branch/master/graph/badge.svg" alt="codecov"></a></li>
 </ul>
 </div>
 
