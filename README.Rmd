@@ -81,7 +81,7 @@ We welcome and recognize all contributions. The following are current contributo
 
 ## License
 
-`CryptocurrencyEDAr` was created by MDS Students from Group-11 for course 524. It is licensed under the terms of the MIT license.
+`CryptocurrencyEDAr` was created by MDS Students from Group-11 for course DSCI-524. It is licensed under the terms of the MIT license.
 
 ## Code of Conduct
   
