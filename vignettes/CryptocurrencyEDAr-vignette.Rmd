@@ -2,7 +2,7 @@
 title: "Introduction to CryptocurrencyEDAr"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{CryptocurrencyEDAr-vignette}
+  %\VignetteIndexEntry{Introduction to CryptocurrencyEDAr}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -26,6 +26,9 @@ Cryptocurrency investors and enthusiasts can use this package to analyze cryptoc
 Data is sourced from the KuCoin API.  
 
 ## Function Demonstration
+```{r}
+devtools::load_all()
+```
 
 ### Retrieve Data and Store it as a dataframe
 This function downloads historical data using an an http request from a cryptocurrency exchange. It returns a data frame with cryptocurrency symbol, time frame, and closing price.
