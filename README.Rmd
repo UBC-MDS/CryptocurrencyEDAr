@@ -46,7 +46,7 @@ You can install the development version of `CryptocurrencyEDAr` from
 [GitHub](https://github.com/) with:
 
 ``` {r, results = "hide"}
-# install.packages("devtools")
+# install.packages("devtools", quiet = TRUE)
 devtools::install_github("UBC-MDS/CryptocurrencyEDAr")
 ```
 
