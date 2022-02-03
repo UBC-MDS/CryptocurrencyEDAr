@@ -48,7 +48,7 @@ You can install the development version of `CryptocurrencyEDAr` from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("UBC-MDS/CryptocurrencyEDAr")
+devtools::install_github("UBC-MDS/CryptocurrencyEDAr", quiet = TRUE)
 #> Downloading GitHub repo UBC-MDS/CryptocurrencyEDAr@HEAD
 #> Installing 23 packages: rlang, digest, crayon, cli, pillar, magrittr, fansi, lifecycle, withr, tibble, glue, stringi, xfun, yaml, jsonlite, backports, knitr, Rcpp, viridis, htmlTable, data.table, openssl, mime
 #> Installing packages into 'C:/Users/alexx/R/win-library/4.1'
