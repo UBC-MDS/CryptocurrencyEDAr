@@ -8,9 +8,6 @@
 [![R-CMD-check](https://github.com/UBC-MDS/CryptocurrencyEDAr/workflows/R-CMD-check/badge.svg)](https://github.com/UBC-MDS/CryptocurrencyEDAr/actions)
 [![Codecov test
 coverage](https://codecov.io/gh/UBC-MDS/CryptocurrencyEDAr/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/CryptocurrencyEDAr?branch=main)
-[![R build
-status](https://github.com/UBC-MDS/CryptocurrencyEDAr/workflows/R-CMD-check/badge.svg)](https://github.com/UBC-MDS/CryptocurrencyEDAr/actions)
-[![codecov](https://github.com/UBC-MDS/CryptocurrencyEDAr/branch/master/graph/badge.svg)](https://app.codecov.io/gh/UBC-MDS/CryptocurrencyEDA)
 <!-- badges: end -->
 
 This is a R package to analyze historical cryptocurrency prices and

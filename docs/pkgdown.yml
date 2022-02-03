@@ -1,6 +1,7 @@
 pandoc: 2.14.0.3
 pkgdown: 2.0.2
 pkgdown_sha: ~
-articles: {}
-last_built: 2022-02-01T06:20Z
+articles:
+  CryptocurrencyEDAr-vignette: CryptocurrencyEDAr-vignette.html
+last_built: 2022-02-03T03:43Z
 
