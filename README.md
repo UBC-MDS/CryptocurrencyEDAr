@@ -1,9 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# CryptocurrencyEDAr
+# regexcite
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/UBC-MDS/CryptocurrencyEDAr/workflows/R-CMD-check/badge.svg)](https://github.com/UBC-MDS/CryptocurrencyEDAr/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/UBC-MDS/CryptocurrencyEDAr/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/CryptocurrencyEDAr?branch=main)
+[![codecov](https://codecov.io/gh/UBC-MDS/CryptocurrencyEDAr/branch/master/graph/badge.svg?token=XdyLDqlh91)](https://codecov.io/gh/UBC-MDS/CryptocurrencyEDAr)
 <!-- badges: end -->
 
 This is a R package to analyze historical cryptocurrency prices and
